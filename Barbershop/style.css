@@ -11,7 +11,7 @@ body {
 	background: #242424 url("img/background.jpg") no-repeat center top;
 }
 
-.clearfix::after {
+.clearfix:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -160,7 +160,7 @@ body {
 	margin-bottom: 35px;
 	padding: 55px 80px;
 	color: #000000;
-	background: url("img/content-shadow.png") no-repeat center, 
+	background: url("img/content-shadow.png") no-repeat center,
 	#f8f5f2 url("img/content-pattern.jpg");
 }
 
@@ -454,11 +454,11 @@ body {
 	background-image: url("img/spritesheet2.png");
   	background-repeat: no-repeat;
   	background-position: 260px 0px;
-}	
+}
 
 .login-form input[type="text"]:focus,
 .login-form input[type="password"]:focus {
-	border-color: #663d15; 
+	border-color: #663d15;
 }
 
 .login-form input[type="checkbox"] {
@@ -596,7 +596,7 @@ body {
 }
 
 .inner-content .big-heading h2 {
-	margin-left: 186px; 
+	margin-left: 186px;
 	font-size: 48px;
 	line-height: 42px;
 	margin-bottom: 70px;
