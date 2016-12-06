@@ -388,6 +388,120 @@ body {
 	background: #ffffff;
 }
 
+.modal-content {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 300px;
+	margin-top: 150px;
+	margin-left: -230px;
+	padding: 50px 80px;
+	color: #000000;
+	background: #f8f5f2 url("img/content-pattern.jpg");
+}
+
+.modal-content-close {
+	position: absolute;
+	top: 0;
+	right: -50px;
+	width: 40px;
+	height: 40px;
+	font-size: 0;
+	background: url(img/modal-content-close.png) no-repeat center;
+	opacity: 0.5;
+}
+
+.modal-content-close:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+.modal-content-title h1 {
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.login-form {
+	margin-top: 25px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	margin-bottom: 10px;
+	padding: 10px 15px;
+	padding-right: 40px;
+	width: 241px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	border: 2px solid #000000;
+	outline: none;
+	background: #f9f6f3;
+}
+
+.login-form input.icon-user {
+  	background-image: url("img/spritesheet2.png");
+  	background-repeat: no-repeat;
+  	background-position: 260px -33px;
+}
+
+.login-form input.icon-password {
+	background-image: url("img/spritesheet2.png");
+  	background-repeat: no-repeat;
+  	background-position: 260px 0px;
+}	
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+	border-color: #663d15; 
+}
+
+.login-form input[type="checkbox"] {
+	display: none;
+}
+
+.login-form input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+
+.login-form input[type="checkbox"] + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000;
+}
+
+.login-form input[type="checkbox"] + label:hover {
+  color: #663d15;
+}
+
+.login-form input[type="checkbox"]:checked + label:before {
+  background: url("img/spritesheet.png") no-repeat;
+  background-position: -20px -2px;
+}
+
+.login-form .restore {
+	float: right;
+	color: #000000;
+}
+
+.modal-content .btn {
+	margin-top: 18px;
+	width: 100%;
+}
 
 /*price.html*/
 
@@ -419,12 +533,14 @@ body {
 	vertical-align: top;
 }
 
-.breadcrumbs li:nth-child(1) {
+.breadcrumbs li:nth-child(1),
+.shop-page .breadcrumbs li:nth-child(2) {
 	position: relative;
 	padding-right: 25px;
 }
 
-.breadcrumbs li:nth-child(1):before {
+.breadcrumbs li:nth-child(1):before,
+.shop-page .breadcrumbs li:nth-child(2):before {
 	position: absolute;
 	display: block;
 	content: "";
@@ -446,6 +562,10 @@ body {
 }
 
 .breadcrumbs .current:hover {
+	cursor: pointer;
+}
+
+.shop-page .breadcrumbs li:nth-child(2):hover {
 	cursor: pointer;
 }
 
@@ -551,4 +671,186 @@ body {
 
 .inner-page .main-footer {
 	margin-top: 0;
+}
+
+/*shop.html*/
+
+.shop-page .breadcrumbs {
+	margin-bottom: 47px;
+}
+
+.shop-column-left {
+	float: left;
+}
+
+.shop-column-title {
+	margin-bottom: 27px;
+	font-size: 24px;
+	line-height: 42px;
+}
+
+.producers-form input[type="checkbox"] {
+	display: none;
+}
+
+.producers-form input[type="checkbox"] + label {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 17px;
+	padding-left: 43px;
+}
+
+.producers-form input[type="checkbox"] + label:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #000000;
+}
+
+.producers-form input[type="checkbox"]:checked + label:before{
+	background: url("img/spritesheet.png") no-repeat;
+	background-position: -20px -2px;
+}
+
+.products-form input[type="radio"] {
+	display: none;
+}
+
+.products-form input[type="radio"] + label {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 30px;
+	padding-left: 43px;
+}
+
+.products-form input[type="radio"] + label:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #000000;
+	border-radius: 25px;
+}
+
+.products-form input[type="radio"]:checked + label:before {
+	background: url("img/spritesheet.png") no-repeat;
+	background-position: 1px 1px;
+}
+
+.shop-column-right {
+	padding-top: 18px;
+}
+
+.shop-column-right .shop-item {
+	margin-right: -20px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	width: 220px;
+	height: 286px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 15px 0px rgba(00, 01, 01, 0.2);
+}
+
+.shop-item figcaption {
+	margin-top: 10px;
+	margin-left: 16px;
+}
+
+.shop-item-title {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.shop-item-comment {
+	margin-top: -2px;
+	text-transform: initial;
+}
+
+.shop-item table {
+	margin-top: 8px;
+	width: 186px;
+	height: 46px;
+	background: #000000;
+	border-collapse: collapse;
+}
+
+.shop-item table tr {
+	color: #ffffff;
+}
+
+.shop-item table td:nth-child(1) {
+	padding-left: 30px;
+	background: #e5e5e5;
+	color: #000000;
+}
+
+.shop-item table td:nth-child(2) {
+	padding-left: 20px;
+}
+
+.shop-item table td:nth-child(2):hover {
+	background: #663d15;
+	cursor: pointer;
+}
+
+.shop-column-right .shop-item:nth-child(1) {
+	float: left;
+}
+
+.shop-column-right .shop-item:nth-child(2) {
+	float: left;
+}
+
+.shop-column-right .shop-item:nth-child(3) {
+	float: left;
+}
+
+.shop-column-right .shop-item:nth-child(4) {
+	float: left;
+}
+
+.shop-column-right .shop-item:nth-child(5) {
+	float: left;
+}
+
+.shop-column-right .shop-item:nth-child(6) {
+	float: left;
+}
+
+.shop-column-right .shop-paginator {
+	float: left;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	margin-left: 240px;
+}
+
+.shop-paginator a {
+	margin-right: 5px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+	width: 43px;
+	height: 43px;
+	color: #ffffff;
+	background: #000000;
+	text-decoration: none;
+}
+
+.shop-paginator a:hover {
+	background: #663d15;
+}
+
+.shop-paginator .current {
+	color: #000000;
+	background: #ffffff;
+}
+
+.shop-paginator .current:hover {
+	background: #ffffff;
 }
