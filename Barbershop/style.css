@@ -390,7 +390,7 @@ body {
 
 .modal-content {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 50%;
 	width: 300px;
@@ -401,8 +401,16 @@ body {
 	background: #f8f5f2 url("img/content-pattern.jpg");
 }
 
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
 .modal-content-show {
 	display: block;
+	animation: bounce 0.6s;
 }
 
 .modal-content-close {
