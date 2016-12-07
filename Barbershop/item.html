@@ -1,113 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<title>Barbershop — Baster of California</title>
+	<meta charset="UTF-8">
+	<title>Barbershop — Магазин</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="inner-page shop-page item-page">
 
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
-					<li class="active"><a href="#">Главная</a></li>
+					<li><a href="index.html">Главная</a></li>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="price.html">Прайс-лист</a></li>
-					<li><a href="shop.html">Магазин</a></li>
+					<li class="active"><a href="shop.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="user-block">
 				<a class="login" href="#">Вход</a>
 			</div>
+		</div>
 	</header>
 
 	<div class="container">
-		<div class="logo">
-			<img src="img/logo.png" alt="Барбершоп Бородинский" width="368" height="204">
-		</div>
-		<section class="features-row clearfix">
-			<div class="features-item">
-				<h2>Быстро</h2>
-				<p>Мы делаем свою работу быстро! Два часа<br>
-				пролетят незаметно и вы — счастливый<br>
-				обладатель стильной стрижки-минутки!</p>
-			</div>
-			<div class="features-item">
-				<h2>Круто</h2>
-				<p>Забудьте, как вы стриглиь раньше.<br>
-				Мы сделаем из вас звезду футбола или кино!<br>
-				Во всяком случае внешне.</p>
-			</div>
-			<div class="features-item">
-				<h2>Дорого</h2>
-				<p>Наши мастера — профессионалы своего дела<br>
-				и не могут стоить дешево. К тому же, разве цена<br>
-				не дает определенный статус?</p>
-			</div>
-		</section>
+			<ul class="breadcrumbs">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="shop.html">Магазин</a></li>
+				<li><a href="shop.html">Средства для ухода</a></li>
+				<li class="current">Baxter of California</li>
+			</ul>
 
-		<div class="content clearfix">
-			<section class="content-column-left">
-				<h2 class="content-column-title">Новости</h2>
-				<ul class="news-block">
-					<li>
-						Нам наконец завезли ягермайстер! Теперь вы<br>
-						можете пропустить стаканчик во время стрижки<br>
-						<time datetime="2016-09-25">25 сентября</time>
-					</li>
-					<li>
-						В нашей команде пополнение, Борис «Бритва»<br>
-						Стригунец, обладатель множества титулов и<br>
-						наград пополнил наши стройные ряды<br>
-						<time datetime="2016-09-19">19 сентября</time>
-					</li>
-				</ul>
-				<a class="btn" href="#">Все новости</a>
-			</section>
-			<section class="content-column-right">
-				<h2 class="content-column-title">Фотогалерея</h2>
-				<div class="gallery">
-					<figure class="gallery-content">
-						<img src="img/gallery-pic1.jpg" alt="" width="286" height="164">
-					</figure>
-					<button class="btn gallery-go-back" disabled>Назад</button>
-					<button class="btn gallery-go-ahead">Вперед</button>
+		<div class="inner-content clearfix">
+			<div class="item-column-left clearfix">
+				<img src="img/item-page-img-11.png" width="486" height="524">
+				<img src="img/item-page-img-2.png" width="166" height="175">
+				<img src="img/item-page-img-3.png" width="166" height="175">
+				<img src="img/item-page-img-3.png" width="166" height="175">
+			</div>
+			<div class="item-column-right clearfix">
+				<h2 class="item-title-1">Набор для путешествий</h2>
+				<h3 class="item-title-2">Baxter of California</h3>
+				<table class="item-buy">
+					<tr>
+						<td>2 900 руб.</td>
+						<td><a>Купить</a></td>
+					</tr>
+				</table>
+				<div class="item-status">Есть в наличии</div>
+				<div class="item-code">Артикул: DEXTER-AE</div>
+				<p class="item-information">
+					Travel Kit - необходимый аксессуар во время любого<br>
+					путешествия. В аккуратной кожаной сумке находится все, что<br>
+					нужно для бритья и ухода за кожей во время рабочей поездки<br>
+					или отдыха: средство для умывания, увлажняющий крем, крем<br>
+					для бритья, крем после бритья, шампунь. Набор также может<br>
+					стать отличным подарком.
+				</p>
+				<div class="item-contains">
+					<h3>В набор входят</h3>
+					<ul>
+						<li>Средство для умывания (50 мл)</li>
+						<li>Увлажняющий крем (50 мл)</li>
+						<li>Крем для бритья (50 мл)</li>
+						<li>Крем после бритья, шампунь (50 мл)</li>
+						<li>Удобная кожаная косметичка</li>
+					</ul>
 				</div>
-			</section>
-		</div>
-
-		<div class="content clearfix">
-			<section class="content-column-left">
-				<h2 class="content-column-title">Контактная информация</h2>
-				<p>BARBERSHOP «BORODINSKI»<br>
-				Адрес: г.Москва, ул. Собаки Павлова, д. 13<br>
-				Телефон: +7(495)666-02-666</p>
-				<p>Время работы:<br>
-				Пн — Пт: С 10:00 до 22:00<br>
-				Сб — Вс: С 10:00 до 19:00</p>
-				<div class="contacts-btn">
-					<a class="btn" href="#">Как проехать</a>
-					<a class="btn" href="#">Обратная связь</a>
-				</div>
-			</section>
-			<section class="content-column-right">
-				<div class="appointment-form">
-					<h2 class="content-column-title">Записаться</h2>
-					<p>Укажите желаемую дату и время и мы свяжемся<br>
-					с вами для подтверждения брони</p>
-					<form action="/echo" method="post">
-						<input type="date" name="date" placeholder="Дата">
-						<input type="time" name="time" placeholder="Время">
-						<input type="text" name="name" placeholder="Ваше имя">
-						<input type="tel" name="phone" placeholder="Телефон">
-						<button class="btn" type="submit">Отправить</button>
-					</form>
-				<div>
-			</section>
+			</div>
 		</div>
 	</div>
 
@@ -131,24 +94,6 @@
 			</section>
 		</div>
 	</footer>
-
-	<div class="modal-content">
-		<div class="modal-content-close">Закрыть</div>
-		<div class="modal-content-title">
-			<h1>Личный кабинет</h1>
-		</div>
-		<div class="modal-content-text">
-			<p>Введите свой логин и пароль</p>
-		</div>
-		<form class="login-form" action="/echo" method="post">
-			<input type="text" class="icon-user" name="login" placeholder="Логин" required>
-			<input type="password" class="icon-password" name="password" placeholder="Пароль" required>
-			<input type="checkbox" name="remember" id="remember-me">
-			<label for="remember-me">Запомните меня</label>
-			<a href="#" class="restore">Я забыл пароль!</a>
-			<button type="submit" class="btn">Войти</button>
-		</form>
-	</div>
 
 </body>
 </html>

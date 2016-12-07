@@ -534,13 +534,15 @@ body {
 }
 
 .breadcrumbs li:nth-child(1),
-.shop-page .breadcrumbs li:nth-child(2) {
+.shop-page .breadcrumbs li:nth-child(2),
+.item-page .breadcrumbs li:nth-child(3) {
 	position: relative;
 	padding-right: 25px;
 }
 
 .breadcrumbs li:nth-child(1):before,
-.shop-page .breadcrumbs li:nth-child(2):before {
+.shop-page .breadcrumbs li:nth-child(2):before,
+.item-page .breadcrumbs li:nth-child(3):before {
 	position: absolute;
 	display: block;
 	content: "";
@@ -771,6 +773,12 @@ body {
 	text-transform: initial;
 }
 
+.shop-item a {
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+}
+
 .shop-item table {
 	margin-top: 8px;
 	width: 186px;
@@ -853,4 +861,40 @@ body {
 
 .shop-paginator .current:hover {
 	background: #ffffff;
+}
+
+/*item.html*/
+
+.item-page .breadcrumbs {
+	margin-bottom: 25px;
+}
+
+.item-column-left {
+	float: left;
+	margin-left: -12px;
+	width: 490px;
+}
+
+.item-column-left img:nth-child(2),
+.item-column-left img:nth-child(3),
+.item-column-left img:nth-child(4) {
+	display: inline-block;
+	margin-top: -10px;
+	margin-right: -8px;
+}
+
+.item-column-right {
+	margin-top: -20px;
+	float: right;
+}
+
+.item-title-1 {
+	margin-bottom: 12px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.item-title-2 {
+	font-size: 24px;
+	line-height: 42px;
 }
