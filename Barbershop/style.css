@@ -401,6 +401,10 @@ body {
 	background: #f8f5f2 url("img/content-pattern.jpg");
 }
 
+.modal-content-show {
+	display: block;
+}
+
 .modal-content-close {
 	position: absolute;
 	top: 0;
