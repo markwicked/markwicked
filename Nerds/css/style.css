@@ -67,12 +67,14 @@
 /*index.html*/
 
 body {
+  margin: 0;
   min-width: 900px;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  font-style: normal;
-  font-weight: 300;
   font-family: "Roboto", sans-serif;
+  color: #283136;
 }
 
 .clearfix::after {
@@ -91,16 +93,18 @@ body {
   margin-top: 27px;
 }
 
-.main-header .logo {
-  float: left;
-  margin-bottom: 77px;
+.upper-header {
+  margin-bottom: 52px;
 }
 
-.main-navigation {
+.upper-header .logo {
   float: left;
-  margin-top: 29px;
-  margin-left: 170px;
-  margin-bottom: 77px;
+}
+
+.upper-header .main-navigation {
+  float: left;
+  margin-top: 28px;
+  margin-left: 180px;
 }
 
 .main-navigation ul {
@@ -112,31 +116,69 @@ body {
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
+  margin-right: 44px;
+}
+
+.main-navigation li:nth-child(4) {
+  margin-right: 61px;
+}
+
+.main-navigation li:last-child {
+  margin-right: 0;
+}
+
+.main-navigation .icon-basket {
+  padding-right: 5px;
 }
 
 .main-navigation a {
-  display: inline-block;
-  margin-right: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-weight: bold;
   font-size: 14px;
   line-height: 30px;
-  font-weight: bold;
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
-  outline: 1px solid red;
 }
 
-.main-navigation li:nth-child(5) {
-  margin-left: 50px;
-}
-
-.main-header .slider-1-left {
+.lower-header .slider-1-left {
   float: left;
 }
 
-.map {
-  margin: 0 auto;
-  width: 1200px;
+.lower-header .slider-1-left h2 {
+  margin-top: 25px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.lower-header .slider-1-left p {
+  margin-bottom: 29px;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 80px;
+  padding: 12px 70px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fb565a;
+  border-radius: 3px;
+}
+
+.lower-header .slider-switch {
+  float: left;
+  margin-top: 196px;
+  outline: 1px solid red;
+}
+
+.slider-switch input[type="radio"] {
+
+}
+
+.lower-header .slider-1-right {
+  float: right;
 }
