@@ -86,15 +86,17 @@ body {
 .container {
   margin: 0 auto;
   width: 880px;
-  outline: 1px solid red;
+  outline: 1px dotted red;
 }
 
 .main-header {
-  margin-top: 27px;
+  padding-top: 27px;
+  background-color: #eeeeee;
 }
 
 .upper-header {
-  margin-bottom: 52px;
+  margin-bottom: 36px;
+  outline: 1px dotted purple;
 }
 
 .upper-header .logo {
@@ -140,28 +142,84 @@ body {
   text-decoration: none;
 }
 
-.lower-header .slider-1-left {
-  float: left;
+.slider {
+  position: relative;
+  width: 880px;
+  height: 310px;
 }
 
-.lower-header .slider-1-left h2 {
-  margin-top: 25px;
-  margin-bottom: 16px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
+.slider input[type="radio"] {
+  position: absolute;
+  display: none;
 }
 
-.lower-header .slider-1-left p {
-  margin-bottom: 29px;
+.slider-switch {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
 }
 
-.btn {
+.slider-switch label {
   display: inline-block;
-  margin-bottom: 80px;
-  padding: 12px 70px;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-switch label[for="btn-1"],
+#btn-2:checked ~ .slider-switch label[for="btn-2"],
+#btn-3:checked ~ .slider-switch label[for="btn-3"] {
+    background:#c1c1c1;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+
+.slide-text {
+  width: 460px;
+  padding-top: 44px;
+}
+
+.slide-text-title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.slides .btn {
+  display: inline-block;
+  padding: 10px 0;
+  width: 240px;
   font-size: 12px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
@@ -169,16 +227,28 @@ body {
   border-radius: 3px;
 }
 
-.lower-header .slider-switch {
-  float: left;
-  margin-top: 196px;
-  outline: 1px solid red;
+.slider .btn:hover {
+  background-color: #d6494d;
 }
 
-.slider-switch input[type="radio"] {
-
+.slider .btn:active {
+  background-color: #b63538;
 }
 
-.lower-header .slider-1-right {
-  float: right;
+.slide:nth-child(1) {
+  background-image: url("../img/slider-1.png");
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/slider-2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/slider-3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
 }
