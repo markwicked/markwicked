@@ -836,7 +836,7 @@ body {
 .lower-header {
   font-size: 40px;
   line-height: 1;
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   text-transform: uppercase;
 }
