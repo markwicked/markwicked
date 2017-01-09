@@ -78,3 +78,8 @@
 .icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
 .icon-search:before { content: '🔍'; } /* '\1f50d' */
 .icon-bookmark:before { content: '🔖'; } /* '\1f516' */
+
+body {
+  font-family: 'Cuprum', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
