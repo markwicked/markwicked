@@ -9,38 +9,39 @@
 </head>
 <body>
 
-  <header class="main-header">
+  <header>
       <div class="upper-header">
         <div class="container">
-          <div class="logo">
-            <img src="" width="" height="" alt="">
-          </div>
+          <div class="header-logo">Техномарт</div>
           <div class="upper-navigation">
             <ul>
-              <li><span class="icon-search"></span>Поиск</li>
+              <li>
+                <form>
+                  <label for="search"><span class="icon-search"></span></label>
+                  <input id="search" type="search" placeholder="Поиск:">
+                </form>
+              </li>
               <li><a><span class="icon-bookmark"></span>Закладки: 0</a></li>
               <li><a><span class="icon-basket"></span>Корзина: 0</a></li>
-              <li class="make-order"><a>Оформить заказ</a></li>
+              <li><a class="make-order">Оформить заказ</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="middle-header">
-          <div class="contacts-block">
-            <p>Интернет-магазин
-            строительных материалов
-            и инструментов для ремонта</p>
-            <div class="phone-number">+7(495)555-05-55</div>
-            <div class="address">Москва, ул.Строителей, д.15</div>
-            <div class="user-block">
-              <a class="sign-in" href="#">Войти</a>
-              <a class="sign-up" href="#">Регистрация</a>
-            </div>
-          </div>
+        <div class="header-contacts">
+          <p>Интернет-магазин
+          строительных материалов
+          и инструментов для ремонта</p>
+        </div>
+        <div class="header-phone-number"><span class="icon-phone"></span>+7(495)555-05-55</div>
+        <div class="header-address">Москва, ул. Строителей, д.15</div>
+        <div class="user-block">
+          <a class="sign-in" href="#"><span class="icon-login"></span>Войти</a>
+          <a class="sign-up" href="#">Регистрация</a>
         </div>
         <div class="lower-header">
-          <nav class="main-navigation">
+          <nav class="header-navigation">
             <ul>
               <li class="active"><a href="#">Главная</a></li>
               <li><a href="#">Компания</a></li>
@@ -56,22 +57,21 @@
   </header>
 
   <div class="container">
-    <section class="our-service">
-      <div class="item-1">
-        <div class="item-new">new</div>
+    <section class="features">
+      <div class="feature-1">
         <h3>Материалы</h3>
         <a class="btn" href="#">На любой вкус</a>
-        <img src="" width="" height="" alt="">
+        <img src="img/features-1.png" width="44" height="65" alt="">
       </div>
-      <div class="item-2">
+      <div class="feature-2">
         <h3>Инструмент</h3>
         <a class="btn" href="#">На все случаи</a>
-        <img src="" width="" height="" alt="">
+        <img src="img/features-2.png" width="75" height="61" alt="">
       </div>
-      <div class="item-3">
+      <div class="feature-3">
         <h3>Техника</h3>
         <a class="btn" href="#">Для стройки</a>
-        <img src="" width="" height="" alt="">
+        <img src="img/features-3.png" width="78" height="62" alt="">
       </div>
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
@@ -97,42 +97,42 @@
           </div>
         </div>
       </div>
-      <div class="item-4">
+      <div class="feature-4">
         <h3>Скидки 50%</h3>
         <a class="btn" href="#">На 350 товаров</a>
-        <img src="" width="" height="" alt="">
+        <img src="img/features-4.png" width="59" height="72" alt="">
       </div>
-      <div class="item-5">
+      <div class="feature-5">
         <h3>Доставка</h3>
         <a class="btn" href="#">Бесплатно</a>
-        <img src="" width="" height="" alt="">
+        <img src="img/features-1.png" width="78" height="63" alt="">
       </div>
     </section>
-    <section class="popular">
+    <section class="popular-items">
       <div class="popular-bar">
         <div class="popular-bar-title">Популярные товары:</div>
         <a class="btn" href="#">Все популярные товары</a>
       </div>
       <div class="popular-item">
-        <img src="" width="" height="" alt="">
+        <img src="img/shop-item-1.png" width="184" height="164" alt="">
         <div class="item-title">Перфоратор BOSCH BFG 9000</div>
         <div class="old-price">32 500 Р.</div>
         <a class="price-btn" href="#">25 500 Р.</a>
       </div>
       <div class="popular-item">
-        <img src="" width="" height="" alt="">
+        <img src="img/shop-item-2.png" width="127" height="112" alt="">
         <div class="item-title">Перфоратор BOSCH BFG 3000</div>
         <div class="old-price">22 500 Р.</div>
         <a class="price-btn" href="#">15 500 Р.</a>
       </div>
       <div class="popular-item">
-        <img src="" width="" height="" alt="">
+        <img src="img/shop-item-3.png" width="144" height="128" alt="">
         <div class="item-title">Перфоратор BOSCH BFG 6000</div>
         <div class="old-price">30 500 Р.</div>
         <a class="price-btn" href="#">25 500 Р.</a>
       </div>
       <div class="popular-item">
-        <img src="" width="" height="" alt="">
+        <img src="img/shop-item-4.png" width="127" height="112" alt="">
         <div class="item-title">Перфоратор BOSCH BFG 2000</div>
         <div class="old-price">30 500 Р.</div>
         <!-- Спрятать old-price -->
@@ -174,7 +174,7 @@
             к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем,
             поднимая его на ваш этаж!</p>
-            <img src="" width="" height="" alt="">
+            <img src="img/delivery.png" width="467" height="261" alt="">
           </div>
           <div class="switch-slide">
             <h3>Гарантия</h3>
@@ -183,14 +183,14 @@
             возгоранием, вы всегда можете быть уверены в нашей
             гарантии. Мы обменяем сгоревший товар на новый.
             Дом уж восстановите как-нибудь сами.</p>
-            <img src="" width="" height="" alt="">
+            <img src="img/guarantee.png" width="389" height="283" alt="">
           </div>
           <div class="switch-slide">
             <h3>Кредит</h3>
             <p>Залезть в долгоу яму стало проще!
             Кредитные консультанты придут вам на помощь.</p>
             <a class="btn" href="#">Отправить заявку</a>
-            <img src="" width="" height="" alt="">
+            <img src="img/credit.png" width="465" height="285" alt="">
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,
         заехав в наш офис:</p>
-        <img src="" width="" height="" alt="">
+        <img src="img/map.jpg" width="300" height="157" alt="">
         <a class="btn" href="">Заблудились? Напишите нам!</a>
       </div>
     </section>
@@ -225,7 +225,7 @@
     <div class="upper-footer">
       <div class="container">
         <div class="upper-footer-left">
-          <img src="" width="" height="" alt="">
+          <div class="footer-logo">Техномарт</div>
           <div class="footer-address">
             <p>г. Москва, ул. Строителей, 15
             +7 (495) 555-05-55</p>

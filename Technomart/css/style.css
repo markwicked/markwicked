@@ -80,6 +80,98 @@
 .icon-bookmark:before { content: '🔖'; } /* '\1f516' */
 
 body {
+  min-width: 960px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
   font-family: 'Cuprum', sans-serif;
-  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+  padding: 0 10px;
+  outline: 1px dotted blue;
+}
+
+header {
+  color: #fff;
+  background-color: #f1f5f7;
+}
+
+.upper-header {
+  height: 42px;
+  background-color: #293449;
+}
+
+.header-logo {
+  position: absolute;
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  padding: 12px 50px;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26,15px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  box-shadow: 0px 5px 0px 0px rgba(181,41,51,1);
+}
+
+.upper-navigation {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 220px;
+}
+
+.upper-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 1px solid white;
+}
+
+.upper-navigation li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.upper-navigation li:first-child {
+  position: relative;
+}
+
+.upper-navigation li .icon-search {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  opacity: 0.3;
+}
+
+.upper-navigation li .icon-search:hover {
+  opacity: 1;
+}
+
+.upper-navigation input[type="search"] {
+  width: 270px;
+  padding: 12px 50px;
+  padding-right: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: 'Cuprum', sans-serif;
+  color: #fff;
+  background-color: #293449;
+  border: none;
+  outline: none;
+}
+
+.upper-navigation input[type="search"]:hover {
+  background-color: #212a3a;
+}
+
+.upper-navigation input[type="search"]:hover ~ .icon-search {
+  opacity: 1;
 }
