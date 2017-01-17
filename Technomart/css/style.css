@@ -138,19 +138,8 @@ header {
   vertical-align: top;
 }
 
-.upper-navigation li:first-child {
-  position: relative;
-}
-
-.upper-navigation li .icon-search {
-  position: absolute;
-  top: 12px;
-  left: 17px;
-  opacity: 0.3;
-}
-
-.upper-navigation li .icon-search:hover {
-  opacity: 1;
+.upper-navigation li:not(:nth-child(1)) {
+  margin-left: -4px;
 }
 
 .upper-navigation input[type="search"] {
@@ -163,15 +152,43 @@ header {
   line-height: 18px;
   font-family: 'Cuprum', sans-serif;
   color: #fff;
-  background-color: #293449;
+  background: #293449 url("../img/icon-search-inactive.png") no-repeat 18px 12px;
   border: none;
   outline: none;
 }
 
-.upper-navigation input[type="search"]:hover {
-  background-color: #212a3a;
+::-webkit-input-placeholder {
+  color: #fff;
 }
 
-.upper-navigation input[type="search"]:hover ~ .icon-search {
+::-moz-placeholder {
   opacity: 1;
+}
+
+.upper-navigation input[type="search"]:hover {
+  background: #212a3a url("../img/icon-search-active.png") no-repeat 18px 12px;
+}
+
+.upper-navigation input[type="search"]:focus {
+  color: #000;
+  background: #fff url("../img/icon-search-focused.png") no-repeat 18px 12px;
+}
+
+.upper-navigation li:nth-child(2) {
+  padding: 12px 18px;
+  padding-left: 14px;
+}
+
+.upper-navigation li span {
+  margin-right: 6px;
+}
+
+.upper-navigation li:nth-child(3) {
+  padding: 12px 18px;
+  padding-left: 22px;
+}
+
+.upper-navigation .make-order {
+  padding: 13px 20px;
+  background-color: #63a63e;
 }

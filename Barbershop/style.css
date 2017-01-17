@@ -457,15 +457,15 @@ body {
 }
 
 .login-form input.icon-user {
-  	background-image: url("img/spritesheet2.png");
-  	background-repeat: no-repeat;
-  	background-position: 260px -33px;
+  background-image: url("img/spritesheet2.png");
+  background-repeat: no-repeat;
+  background-position: 260px -33px;
 }
 
 .login-form input.icon-password {
 	background-image: url("img/spritesheet2.png");
-  	background-repeat: no-repeat;
-  	background-position: 260px 0px;
+  background-repeat: no-repeat;
+  background-position: 260px 0px;
 }
 
 .login-form input[type="text"]:focus,
