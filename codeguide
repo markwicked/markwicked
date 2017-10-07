@@ -1,3 +1,23 @@
+//HTML//
+
+1. Use <html lang="en-us">
+2. Use <meta charset="UTF-8">
+
+HTML attributes order:
+class
+id, name
+data-*
+src, for, type, href
+title, alt
+aria-*, role
+
+
+//CSS//
+
+1. Use single declarations (.span1 { width: 60px; })
+
+background: [bc] [bi] [br] [bp] [ba];
+
 .declaration-order {
   /* Positioning */
   position: absolute;

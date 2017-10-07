@@ -9,8 +9,45 @@ body {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
   width: 1160px;
   outline: 1px dashed black;
+}
+
+.main-header .container {
+  padding-top: 40px;
+}
+
+.inner-header {
+  height: 299px;
+  background-color: #f7e296;
+  padding-top: 47px;
+}
+
+.main-header .logo {
+  position: absolute;
+  top: 22px;
+  left: 78px;
+}
+
+.main-navigation {
+  outline: 1px dashed blue;
+}
+
+.main-navigation .search {
+  margin-left: 60px;
+  margin-right: 320px;
+  width: 200px;
+  outline: 1px dashed red;
+}
+
+.navigation-block {
+  width: 520px;
+  outline: 1px dashed green;
+}
+
+.navigation-block li {
+  display: inline-block;
 }
