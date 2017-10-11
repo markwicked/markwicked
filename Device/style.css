@@ -1,14 +1,14 @@
-body {
+/*body {
   min-width: 1200px;
 }
 
-.clearfix::after {
+/*.clearfix::after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
-.container {
+/*.container {
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
@@ -50,4 +50,4 @@ body {
 
 .navigation-block li {
   display: inline-block;
-}
+}*/*/
