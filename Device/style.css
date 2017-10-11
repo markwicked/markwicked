@@ -1,15 +1,8 @@
-/*body {
+body {
   min-width: 1200px;
 }
 
-/*.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-
-/*.container {
-  position: relative;
+.container {
   margin: 0 auto;
   padding: 0 20px;
   width: 1160px;
@@ -17,37 +10,16 @@
 }
 
 .main-header .container {
+  position: relative;
   padding-top: 40px;
 }
 
-.inner-header {
-  height: 299px;
+.upper-header {
   background-color: #f7e296;
-  padding-top: 47px;
 }
 
-.main-header .logo {
+.upper-header .logo {
   position: absolute;
   top: 22px;
   left: 78px;
 }
-
-.main-navigation {
-  outline: 1px dashed blue;
-}
-
-.main-navigation .search {
-  margin-left: 60px;
-  margin-right: 320px;
-  width: 200px;
-  outline: 1px dashed red;
-}
-
-.navigation-block {
-  width: 520px;
-  outline: 1px dashed green;
-}
-
-.navigation-block li {
-  display: inline-block;
-}*/*/
