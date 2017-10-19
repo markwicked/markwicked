@@ -1,5 +1,9 @@
 body {
   min-width: 1200px;
+  font-family: "open_sanslight", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .container {
@@ -22,4 +26,32 @@ body {
   position: absolute;
   top: 22px;
   left: 78px;
+}
+
+.upper-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 50px 60px 0;
+  outline: 1px solid red;
+}
+
+.upper-navigation .search-block {
+  width: 200px;
+  margin-right: 340px;
+  outline: 1px dashed #fff;
+}
+
+.search-block input {
+  background: none;
+}
+
+.upper-navigation ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 500px;
+  list-style: none;
+  outline: 1px dashed black;;
 }

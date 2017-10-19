@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart-icon {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-cart-icon_footer_ {
+    width: 12px;
+    height: 12px;
+    background-position: -42px -10px;
+}
+
+.sprite-compare-icon {
+    width: 10px;
+    height: 10px;
+    background-position: -74px -10px;
+}
+
+.sprite-compare-icon_footer_ {
+    width: 10px;
+    height: 10px;
+    background-position: -104px -10px;
+}
+
+.sprite-facebook-icon {
+    width: 39px;
+    height: 38px;
+    background-position: -134px -10px;
+}
+
+.sprite-htmlacademy-icon {
+    width: 27px;
+    height: 34px;
+    background-position: -193px -10px;
+}
+
+.sprite-insta-icon {
+    width: 39px;
+    height: 38px;
+    background-position: -240px -10px;
+}
+
+.sprite-plus-icon {
+    width: 16px;
+    height: 16px;
+    background-position: -299px -10px;
+}
+
+.sprite-search-icon {
+    width: 16px;
+    height: 16px;
+    background-position: -335px -10px;
+}
+
+.sprite-twitter-icon {
+    width: 38px;
+    height: 38px;
+    background-position: -371px -10px;
+}
+
+.sprite-user-icon {
+    width: 13px;
+    height: 12px;
+    background-position: -429px -10px;
+}
+
+.sprite-user-icon_footer_ {
+    width: 13px;
+    height: 12px;
+    background-position: -462px -10px;
+}
