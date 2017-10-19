@@ -32,18 +32,29 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  padding: 50px 60px 0;
-  outline: 1px solid red;
+  padding: 40px 60px 0;
+  outline: 1px dashed red;
 }
 
 .upper-navigation .search-block {
-  width: 200px;
+  position: relative;
+  padding-left: 39px;
   margin-right: 340px;
-  outline: 1px dashed #fff;
+  /*outline: 1px dashed #fff;*/
 }
 
 .search-block input {
+  width: 161px;
+  font: inherit;
+  line-height: 36px;
   background: none;
+  border: none;
+}
+
+.search-block .sprite {
+  position: absolute;
+  top: 11px;
+  left: 3px;
 }
 
 .upper-navigation ul {
@@ -53,5 +64,5 @@ body {
   margin: 0;
   width: 500px;
   list-style: none;
-  outline: 1px dashed black;;
+  outline: 1px dashed black;
 }
