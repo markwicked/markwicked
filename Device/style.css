@@ -104,6 +104,7 @@ body {
 
 .upper-header {
   background-color: #f7e296;
+  min-height: 300px;
 }
 
 .upper-header .logo {
@@ -118,13 +119,11 @@ body {
   align-items: flex-end;
   padding: 40px 60px 0;
   margin-bottom: 37px;
-  outline: 1px dashed red;
 }
 
 .search-block {
   position: relative;
   margin-right: 60px;
-  outline: 1px dashed #fff;
 }
 
 .search-block:after {
@@ -166,20 +165,17 @@ body {
   padding: 0;
   width: 500px;
   list-style: none;
-  outline: 1px dashed black;
 }
 
 .upper-navigation ul li {
   display: inline-block;
   vertical-align: top;
-  padding-bottom: 2px;
-  padding-right: 1px;
 }
 
 .upper-navigation ul li:nth-child(1) {
   margin-right: 205px;
   background-image: url('sprite/user-icon.png');
-  background-position: 1px 13px;
+  background-position: 0 12px;
   background-repeat: no-repeat;
 }
 
@@ -205,10 +201,10 @@ body {
 }
 
 .upper-navigation ul a {
-  padding-left: 27px;
+  display: inline-block;
   padding-right: 11px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 3px;
+  padding-left: 27px;
   font: inherit;
   line-height: 36px;
   color: #000;
@@ -216,13 +212,12 @@ body {
 }
 
 .upper-navigation li a:last-child {
-  padding-right: 2px;
-  margin-right: -1px;
+  padding-right: 3px;
+  margin-right: -2px;
 }
 
 .lower-navigation {
   padding-left: 60px;
-  outline: 1px dashed blue;
 }
 
 .lower-navigation ul {
@@ -236,8 +231,124 @@ body {
   letter-spacing: 0.2em;
 }
 
+.lower-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+.lower-navigation li:nth-child(1) {
+  margin-right: 283px;
+}
+
+.lower-navigation li:nth-child(2) {
+  margin-right: 25px;
+}
+
+.lower-navigation li:nth-child(3) {
+  margin-right: 98px;
+}
+
+.lower-navigation li:first-child {
+  position: relative;
+}
+
+.lower-navigation li:first-child a::after {
+  position: absolute;
+  top: 0;
+  left: 230px;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url('sprite/plus-icon.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.lower-navigation li:first-child a:hover::after {
+  opacity: 0.2;
+}
+
+.lower-navigation li:first-child a:active::after {
+  opacity: 0.1;
+}
+
 .lower-navigation li a {
+  display: inline-block;
+  padding: 0;
   text-decoration: none;
   color: #000;
-  outline: 1px dashed red;
+}
+
+.lower-navigation li a:hover {
+  opacity: 0.6;
+}
+
+.lower-navigation li a:active {
+  opacity: 0.3;
+}
+
+.lower-navigation .catalogue {
+  width: 250px;
+}
+
+.catalogue-menu {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  margin-left: 20px;
+  padding-left: 60px;
+  padding-right: 548px;
+  min-height: 139px;
+  font: inherit;
+  outline: 1px solid red;
+}
+
+.catalogue-menu ul {
+  margin: 0;
+  padding: 0;
+  width: 552px;
+  list-style: none;
+  outline: 1px solid red;
+}
+
+.catalogue-menu ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 4px;
+}
+
+.catalogue-menu ul li:nth-child(1) {
+  margin-right: 58px;
+}
+
+.catalogue-menu ul li:nth-child(2) {
+  margin-right: 70px;
+}
+
+.catalogue-menu ul li:nth-child(3) {
+  margin-right: -1px;
+}
+
+.catalogue-menu ul li:nth-child(4) {
+  margin-right: 84px;
+}
+
+.catalogue-menu ul li:nth-child(5) {
+  margin-right: 226px;
+}
+
+.catalogue-menu ul li:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.catalogue-menu li a {
+  display: inline-block;
+  text-decoration: none;
+  font: inherit;
+  color: #000;
+  /*outline: 1px solid black;*/
 }
