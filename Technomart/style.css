@@ -41,3 +41,153 @@
 }
 
 /*sprites*/
+
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-basket-icon {
+    width: 17px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-bookmark-icon {
+    width: 14px;
+    height: 16px;
+    background-position: -47px -10px;
+}
+
+.sprite-fb-focus-icon {
+    width: 42px;
+    height: 42px;
+    background-position: -81px -10px;
+}
+
+.sprite-fb-icon {
+    width: 42px;
+    height: 42px;
+    background-position: -143px -10px;
+}
+
+.sprite-inst-focus-icon {
+    width: 42px;
+    height: 42px;
+    background-position: -205px -10px;
+}
+
+.sprite-inst-icon {
+    width: 42px;
+    height: 42px;
+    background-position: -267px -10px;
+}
+
+.sprite-instagram-icon {
+    width: 17px;
+    height: 17px;
+    background-position: -329px -10px;
+}
+
+.sprite-login-focus-icon {
+    width: 20px;
+    height: 17px;
+    background-position: -366px -10px;
+}
+
+.sprite-login-icon {
+    width: 20px;
+    height: 17px;
+    background-position: -406px -10px;
+}
+
+.sprite-logout-focus-icon {
+    width: 21px;
+    height: 17px;
+    background-position: -446px -10px;
+}
+
+.sprite-logout-icon {
+    width: 21px;
+    height: 17px;
+    background-position: -487px -10px;
+}
+
+.sprite-phone-icon {
+    width: 19px;
+    height: 19px;
+    background-position: -528px -10px;
+}
+
+.sprite-search-active-icon {
+    width: 17px;
+    height: 17px;
+    background-position: -567px -10px;
+}
+
+.sprite-search-icon {
+    width: 17px;
+    height: 17px;
+    background-position: -604px -10px;
+}
+
+.sprite-user-focus-icon {
+    width: 20px;
+    height: 18px;
+    background-position: -641px -10px;
+}
+
+.sprite-user-icon {
+    width: 20px;
+    height: 18px;
+    background-position: -681px -10px;
+}
+
+.sprite-vk-focus-icon {
+    width: 41px;
+    height: 42px;
+    background-position: -721px -10px;
+}
+
+.sprite-vk-icon {
+    width: 41px;
+    height: 42px;
+    background-position: -782px -10px;
+}
+
+/*index.html*/
+
+body {
+  min-width: 1200px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  font-weight: normal;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+  outline: 1px dashed black;
+}
+
+.main-header {
+  background-color: #f1f5f7;
+}
+
+.upper-navigation {
+  background-color: #293449;
+}
+
+.logo {
+  padding: 11px 55px 7px 55px;
+  width: 110px;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+  border-bottom: 4px solid #b52933;
+}
