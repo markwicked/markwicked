@@ -43,7 +43,7 @@
 /*sprites*/
 
 .sprite {
-    background-image: url(../images/spritesheet.png);
+    background-image: url(images/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -162,7 +162,7 @@ body {
   min-width: 1200px;
   font-family: "Cuprum", sans-serif;
   font-size: 17px;
-  line-height: 1.9;
+  line-height: 1;
   font-weight: normal;
 }
 
@@ -173,6 +173,12 @@ body {
   outline: 1px dashed black;
 }
 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .main-header {
   background-color: #f1f5f7;
 }
@@ -181,13 +187,123 @@ body {
   background-color: #293449;
 }
 
-.logo {
+.upper-navigation .logo {
+  position: relative;
+  float: left;
   padding: 11px 55px 7px 55px;
   width: 110px;
   font-size: 24px;
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
   background-color: #ee3643;
-  border-bottom: 4px solid #b52933;
+  /*border-bottom: 4px solid #b52933;*/
+}
+
+.upper-navigation .logo::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #b52933;
+}
+
+.upper-navigation .logo:hover {
+  background-color: #ca2c37;
+  border-color: #9a212a;
+}
+
+.upper-navigation .logo:active {
+  background-color: #ba2732;
+  border-color: #8e1e26;
+}
+
+.upper-navigation .search {
+  float: left;
+}
+
+.upper-navigation .search input[type="text"] {
+  padding: 11px 0 10px 48px;
+  width: 270px;
+  box-sizing: border-box;
+  font-family: "Cuprum", sans-serif;
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #fff;
+  background-color: #293449;
+  background-image: url(images/sprites/search-inactive-icon.png);
+  background-repeat: no-repeat;
+  background-position: 18px 12px;
+  border: none;
+  outline: none;
+}
+
+.upper-navigation .search input[type="text"]:hover {
+  background-color: #212a3a;
+  background-image: url(images/sprites/search-icon.png)
+}
+
+.upper-navigation .search input[type="text"]:focus {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url(images/sprites/search-active-icon.png);
+}
+
+.upper-navigation .search input::-webkit-input-placeholder { /* Chrome */
+  color: #fff;
+}
+.upper-navigation .search input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+.upper-navigation .search input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.upper-navigation .search input:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff;
+  opacity: 1;
+}
+
+.upper-navigation .search input:focus::-webkit-input-placeholder { /* Chrome */
+  color: #000;
+}
+
+.upper-navigation .search input:focus:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+.upper-navigation .search input:focus::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+.upper-navigation .search input:focus:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #000;
+  opacity: 1;
+}
+
+.upper-navigation ul {
+  float: right;
+  width: 450px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: 1px solid red;
+}
+
+.upper-navigation ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.upper-navigation ul a {
+  display: block;
+  padding: 11px 0 10px 0;
+  font: inherit;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid red;
 }
