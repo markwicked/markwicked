@@ -9,6 +9,14 @@
 }
 
 @font-face {
+  font-family: "Cuprum Italic";
+  src: url("fonts/cuprumitalic.woff2") format("woff2"),
+       url("fonts/cuprumitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Cuprum Bold";
   src: url("fonts/cuprumbold.woff2") format("woff2"),
        url("fonts/cuprumbold.woff") format("woff");
@@ -170,7 +178,6 @@ body {
   margin: 0 auto;
   padding: 0 10px;
   width: 940px;
-  outline: 1px dashed black;
 }
 
 .clearfix:after {
@@ -183,11 +190,12 @@ body {
   background-color: #f1f5f7;
 }
 
-.upper-navigation {
+.upper-nav {
+  margin-bottom: 46px;
   background-color: #293449;
 }
 
-.upper-navigation .logo {
+.upper-nav .logo {
   position: relative;
   float: left;
   padding: 11px 55px 7px 55px;
@@ -198,10 +206,9 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   background-color: #ee3643;
-  /*border-bottom: 4px solid #b52933;*/
 }
 
-.upper-navigation .logo::after {
+.upper-nav .logo::after {
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -212,22 +219,22 @@ body {
   background-color: #b52933;
 }
 
-.upper-navigation .logo:hover {
+.upper-nav .logo:hover {
   background-color: #ca2c37;
   border-color: #9a212a;
 }
 
-.upper-navigation .logo:active {
+.upper-nav .logo:active {
   background-color: #ba2732;
   border-color: #8e1e26;
 }
 
-.upper-navigation .search {
+.upper-nav .search {
   float: left;
 }
 
-.upper-navigation .search input[type="text"] {
-  padding: 11px 0 10px 48px;
+.upper-nav .search input[type="text"] {
+  padding: 11px 0 11px 48px;
   width: 270px;
   box-sizing: border-box;
   font-family: "Cuprum", sans-serif;
@@ -243,67 +250,162 @@ body {
   outline: none;
 }
 
-.upper-navigation .search input[type="text"]:hover {
+.upper-nav .search input[type="text"]:hover {
   background-color: #212a3a;
   background-image: url(images/sprites/search-icon.png)
 }
 
-.upper-navigation .search input[type="text"]:focus {
+.upper-nav .search input[type="text"]:focus {
   color: #000000;
   background-color: #ffffff;
   background-image: url(images/sprites/search-active-icon.png);
 }
 
-.upper-navigation .search input::-webkit-input-placeholder { /* Chrome */
+.upper-nav .search input::-webkit-input-placeholder { /* Chrome */
   color: #fff;
 }
-.upper-navigation .search input:-ms-input-placeholder { /* IE 10+ */
+.upper-nav .search input:-ms-input-placeholder { /* IE 10+ */
   color: #fff;
 }
-.upper-navigation .search input::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
-  opacity: 1;
-}
-.upper-navigation .search input:-moz-placeholder { /* Firefox 4 - 18 */
+.upper-nav .search input::-moz-placeholder { /* Firefox 19+ */
   color: #fff;
   opacity: 1;
 }
-
-.upper-navigation .search input:focus::-webkit-input-placeholder { /* Chrome */
-  color: #000;
-}
-
-.upper-navigation .search input:focus:-ms-input-placeholder { /* IE 10+ */
-  color: #000;
-}
-.upper-navigation .search input:focus::-moz-placeholder { /* Firefox 19+ */
-  color: #000;
-  opacity: 1;
-}
-.upper-navigation .search input:focus:-moz-placeholder { /* Firefox 4 - 18 */
-  color: #000;
+.upper-nav .search input:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #fff;
   opacity: 1;
 }
 
-.upper-navigation ul {
-  float: right;
-  width: 450px;
+.upper-nav .search input:focus::-webkit-input-placeholder { /* Chrome */
+  color: #000;
+}
+
+.upper-nav .search input:focus:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+.upper-nav .search input:focus::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+.upper-nav .search input:focus:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #000;
+  opacity: 1;
+}
+
+.upper-nav ul {
+  float: left;
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 1px solid red;
 }
 
-.upper-navigation ul li {
+.upper-nav ul li {
   display: inline-block;
   vertical-align: top;
+  margin-right: -3px;
 }
 
-.upper-navigation ul a {
+.upper-nav ul li:nth-child(1)::before {
+  background-position: -10px -9px;
+}
+
+.upper-nav ul a {
   display: block;
-  padding: 11px 0 10px 0;
   font: inherit;
+  vertical-align: middle;
+  line-height: 42px;
   color: #fff;
   text-decoration: none;
-  border-right: 1px solid red;
+}
+
+.upper-nav ul li:nth-child(1) a {
+  padding-left: 44px;
+  padding-right: 29px;
+}
+
+.upper-nav ul li:nth-child(2) a {
+  padding-left: 47px;
+  padding-right: 29px;
+}
+
+.upper-nav ul li:nth-child(3) a {
+  padding-left: 20px;
+  padding-right: 22px;
+  border-right: 0;
+}
+
+.upper-nav ul li:nth-child(1) {
+  background: url("images/sprites/bookmark-inactive-icon.png") no-repeat 17px 12px;
+}
+
+.upper-nav ul li:nth-child(2) {
+  background: url("images/sprites/basket-inactive-icon.png") no-repeat 14px 12px;
+}
+
+.upper-nav ul li:nth-child(3) {
+  background-color: #63a63e;
+}
+
+.upper-nav ul li:nth-child(1):hover {
+  background: url("images/sprites/bookmark-focus-icon.png") no-repeat 17px 12px #212a3a;
+}
+
+.upper-nav ul li:nth-child(2):hover {
+  background: url("images/sprites/basket-focus-icon.png") no-repeat 14px 12px #212a3a;
+}
+
+.upper-nav ul li:nth-child(3):hover {
+  background-color: #5fbb2d;
+}
+
+.upper-nav ul li:nth-child(1):active {
+  background: url("images/sprites/bookmark-active-icon.png") no-repeat 17px 12px #161d29;
+}
+
+.upper-nav ul li:nth-child(2):active {
+  background: url("images/sprites/basket-active-icon.png") no-repeat 14px 12px #161d29;
+}
+
+.upper-nav ul li:nth-child(3):active {
+  background-color: #518534;
+}
+
+.upper-nav ul li:nth-child(1):active a {
+  opacity: 0.6;
+}
+
+.upper-nav ul li:nth-child(2):active a {
+  opacity: 0.6;
+}
+
+.upper-nav ul li:nth-child(3):active a {
+  opacity: 0.5;
+}
+
+.header-info .container {
+  outline: 1px dashed #000;
+}
+
+.header-info .shop-info {
+  float: left;
+  padding-top: 3px;
+  margin-left: 53px;
+  font-family: "Cuprum Italic";
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+  outline: 1px dashed red;
+}
+
+.header-info .shop-address {
+  float: left;
+  margin-left: 71px;
+}
+
+.header-info .shop-address .phone {
+
+}
+
+.header-info .user-block {
+  float: left;
 }
