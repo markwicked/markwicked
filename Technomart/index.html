@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no"/>
   <link rel="stylesheet" href="../normalize.css">
   <link rel="stylesheet" href="style.css">
   <title>Technomart</title>
@@ -28,12 +29,12 @@
           строительных материалов<br>
           и инструментов для ремонта</div>
         <div class="shop-address">
-          <div class="phone">+7(812)555-05-55</div>
-          <div class="address">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+          <a href="tel:+7(812)555-05-05"><div class="phone">+7 (812) 555-05-55</div></a>
+          <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
         </div>
         <div class="user-block">
-          <div class="login">Войти</div>
-          <div class="sign-in">Регистрация</div>
+          <a href="#" class="login">Войти</a>
+          <a href="#" class="sign-in">Регистрация</a>
         </div>
       </div>
     </div>
@@ -54,45 +55,56 @@
 
   <article class="products">
     <div class="container">
-      <div class="products-item">
+      <div class="product-item">
         <h3>Материалы</h3>
-        <p>На любой вкус</p>
-        <img src="images/item-1.png" alt="">
+        <a href="" class="button">На любой вкус</a>
       </div>
-      <div class="products-item">
+      <div class="product-item">
         <h3>Инструмент</h3>
-        <p>На все случаи</p>
-        <img src="images/item-2.png" alt="">
+        <a href="" class="button">На все случаи</a>
       </div>
-      <div class="products-item">
+      <div class="product-item">
         <h3>Техника</h3>
-        <p>Для стройки</p>
-        <img src="images/item-3.png" alt="">
+        <a href="" class="button">Для стройки</a>
       </div>
-      <div class="products-slider">
-        <div class="slide">
-          <h3>Перфораторы</h3>
-          <p>Настоящие мужские игрушки</p>
+      <div class="product-slider">
+        <div class="slider-content">
+          <div class="slide">
+            <h3>Перфораторы</h3>
+            <p>Настоящие мужские игрушки</p>
+            <img src="images/items-slider-1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <h3>Дрели</h3>
+            <p>Соседям на радость!</p>
+            <img src="images/items-slider-2.jpg" alt="">
+          </div>
+          <a href="#" class="button">Открыть каталог</a>
         </div>
-        <div class="slide">
-          <h3>Дрели</h3>
-          <p>Соседям на радость!</p>
+        <div class="slider-controls">
+          <div class="arrows">
+            <div class="prev-arrow">
+              <img src="images/slider-arrow-left.png" alt="">
+            </div>
+            <div class="next-arrow">
+              <img src="images/slider-arrow-right.png" alt="">
+            </div>
+          </div>
+          <div class="dots">
+            <i class="active"></i>
+            <i></i>
+          </div>
         </div>
-        <div class="toggle">
-          <a href="#" class="left-arrow"></a>
-          <a href="#" class="right-arrow"></a>
-        </div>
-        <a href="#" class="button">Открыть каталог</a>
       </div>
-      <div class="products-item">
-        <h3>Скидки 50%</h3>
-        <p>На 350 товаров</p>
-        <img src="images/item-4.png" alt="">
-      </div>
-      <div class="products-item">
-        <h3>Доставка</h3>
-        <p>Бесплатно</p>
-        <img src="images/item-5.png" alt="">
+      <div class="flex-item">
+        <div class="product-item">
+          <h3>Скидки 50%</h3>
+          <a href="" class="button">На 350 товаров</a>
+        </div>
+        <div class="product-item">
+          <h3>Доставка</h3>
+          <a href="" class="button">Бесплатно</a>
+        </div>
       </div>
     </div>
   </article>

@@ -186,7 +186,33 @@ body {
 	clear: both;
 }
 
+.button {
+  display: block;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+  border-radius: 3px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 38px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
 .main-header {
+  margin-bottom: 59px;
+  padding-bottom: 60px;
   background-color: #f1f5f7;
 }
 
@@ -383,7 +409,7 @@ body {
 }
 
 .header-info .container {
-  outline: 1px dashed #000;
+  margin-bottom: 39px;
 }
 
 .header-info .shop-info {
@@ -394,7 +420,6 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  outline: 1px dashed red;
 }
 
 .header-info .shop-address {
@@ -402,10 +427,348 @@ body {
   margin-left: 71px;
 }
 
-.header-info .shop-address .phone {
+.header-info .shop-address a {
+  text-decoration: none;
+}
 
+.header-info .shop-address .phone {
+  box-sizing: border-box;
+  width: 270px;
+  min-height: 39px;
+  padding-left: 71px;
+  border: 3px solid #fff;
+  background: url("images/sprites/phone-icon.png") no-repeat 12px 10px;
+  font-size: 21px;
+  line-height: 39px;
+  vertical-align: middle;
+  color: #e9292a;
+}
+
+.header-info .shop-address .address {
+  margin-top: 4px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
 }
 
 .header-info .user-block {
   float: left;
+  margin-left: 69px;
+}
+
+.header-info .user-block a {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 45px;
+  min-height: 45px;
+  vertical-align: middle;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.header-info .user-block a:first-child {
+  width: 120px;
+  padding-left: 47px;
+  margin-right: 6px;
+  background-image: url("images/sprites/login-icon.png");
+  background-repeat: no-repeat;
+  background-position: 14px 14px;
+}
+
+.header-info .user-block a:last-child {
+  width: 149px;
+  padding-left: 24px;
+  margin-right: -1px;
+}
+
+.header-info .user-block a:hover {
+  color: #ee3643;
+}
+
+.header-info .user-block a:first-child:hover {
+  background-image: url("images/sprites/login-focus-icon.png");
+}
+
+.header-info .user-block a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-info .user-block a:first-child:active {
+  background-image: url("images/sprites/login-icon.png");
+}
+
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #32425c;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: -5px;
+  vertical-align: top;
+}
+
+.header-nav a {
+  display: block;
+  padding: 20px 31px 19px 30px;
+  vertical-align: middle;
+  font: inherit;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 5px solid #293449;
+}
+
+.header-nav li:nth-child(1) a {
+  padding-left: 52px;
+  padding-right: 36px;
+}
+
+.header-nav li:last-child a {
+  padding-left: 30px;
+  padding-right: 54px;
+}
+
+_:-ms-lang(x), .header-nav li:last-child a {
+  padding-right: 52px;
+}
+
+.header-nav a:hover {
+  background-color: #293449;
+}
+
+.header-nav a:active {
+  background-color: #1d2739;
+}
+
+.products {
+  margin-bottom: 53px;
+}
+
+.products .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  position: relative;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 123px;
+}
+
+.product-item:nth-child(1) {
+  background: url(images/item-1.png) no-repeat 213px 31px #f6b22d;
+}
+
+.product-item:nth-child(1)::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 59px;
+  background: url("images/new.png") no-repeat 0 0;
+}
+
+.product-item:nth-child(2) {
+  background: url(images/item-2.png) no-repeat 197px 32px #4aafde;
+}
+
+.product-item:nth-child(3) {
+  background: url(images/item-3.png) no-repeat 191px 31px #cc79d1;
+}
+
+.flex-item .product-item:nth-child(1) {
+  background: url(images/item-4.png) no-repeat 196px 26px #85d179;
+}
+
+.flex-item .product-item:nth-child(2) {
+  background: url(images/item-5.png) no-repeat 191px 32px #f6b22d;
+}
+
+.flex-item .product-item:nth-child(1)::after {
+  background: none;
+}
+
+.product-item .button {
+  margin-left: 25px;
+  width: 135px;
+}
+
+.product-item:nth-child(1) .button {
+  background-color: #dda028;
+}
+
+.product-item:nth-child(1) .button:hover {
+  background-color: #c58e24;
+}
+
+.product-item:nth-child(1) .button:active {
+  background-color: #ac7c1f;
+}
+
+.product-item:nth-child(2) .button {
+  background-color: #429dc7;
+}
+
+.product-item:nth-child(2) .button:hover {
+  background-color: #3b8cb2;
+}
+
+.product-item:nth-child(2) .button:active {
+  background-color: #347a9b;
+}
+
+.product-item:nth-child(3) .button {
+  margin-left: 23px;
+  background-color: #b76dbc;
+}
+
+.product-item:nth-child(3) .button:hover {
+  background-color: #a361a7;
+}
+
+.product-item:nth-child(3) .button:active {
+  background-color: #8e5492;
+}
+
+.flex-item .product-item:nth-child(1) .button {
+  margin-left: 23px;
+  background-color: #77bc6d;
+}
+
+.flex-item .product-item:nth-child(1) .button:hover {
+  background-color: #6aa761;
+}
+
+.flex-item .product-item:nth-child(1) .button:active {
+  background-color: #5d9254;
+}
+
+.flex-item .product-item:nth-child(2) .button {
+  margin-left: 23px;
+  background-color: #dda028;
+}
+
+.flex-item .product-item:nth-child(2) .button:hover {
+  background-color: #c58e24;
+}
+
+.flex-item .product-item:nth-child(2) .button:active {
+  background-color: #ac7c1f;
+}
+
+.product-item h3 {
+  margin: 0;
+  padding-top: 21px;
+  padding-left: 22px;
+  padding-bottom: 12px;
+  font-family: "Cuprum Bold";
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.product-slider {
+  position: relative;
+  width: 620px;
+  height: 266px;
+}
+
+.slider-content .slide:nth-child(2) {
+  display: none;
+}
+
+.slider-content .slide img {
+  width: 100%;
+}
+
+.slider-content .slide h3,
+.slider-content .slide p {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  color: #fff;
+}
+
+.slider-content .slide h3 {
+  top: 26px;
+  left: 25px;
+  font-family: "Cuprum Bold";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.slider-content .slide p {
+  top: 60px;
+  left: 26px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.slider-content .button {
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+}
+
+.slider-controls .arrows {
+  cursor: pointer;
+}
+
+.slider-controls .prev-arrow {
+  position: absolute;
+  top: 114px;
+  left: 25px;
+}
+
+.slider-controls .next-arrow {
+  position: absolute;
+  top: 114px;
+  right: 25px;
+}
+
+.slider-controls .dots {
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 10px;
+}
+
+.slider-controls .dots i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  vertical-align: top;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .dots i:first-child {
+  margin-right: 5px;
+}
+
+.slider-controls .dots .active {
+  background-color: #ee3643;
+}
+
+
+.popular {
+
 }
