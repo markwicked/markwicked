@@ -1,7 +1,20 @@
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-navigation .site-navigation a {
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.main-page {
 }
