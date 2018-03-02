@@ -17,14 +17,32 @@ a {
 
 .main-header {
   position: relative;
+  min-height: 564px;
+  background-image:
+    url("../img/header-shape.png"),
+    url("../img/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position:
+    0 507px,
+    0 0;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  /* outline: 1px dotted red; */
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+  outline: 1px dotted red;
+}
+
+.main-navigation {
+  background-color: #ffffff;
+}
+
+.main-navigation .logo {
+  position: absolute;
+  top: 0;
+  left: 531px;
 }
 
 .main-navigation .site-navigation {
@@ -34,9 +52,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.main-navigation .site-navigation li {
 }
 
 .main-navigation .site-navigation li:nth-child(1) {
@@ -50,12 +65,6 @@ a {
 
 .main-navigation .site-navigation li:nth-child(3) {
   margin-right: 161px;
-}
-
-.main-navigation .logo {
-  position: absolute;
-  top: 0;
-  left: 531px;
 }
 
 .main-navigation .site-navigation a {
