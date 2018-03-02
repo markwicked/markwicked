@@ -9,119 +9,124 @@
 </head>
 <body>
 
-  <header class="main-header container">
-    <nav class="main-navigation">
-      <a class="logo">
-      <img src="img/logo.png" width="138" height="70" alt="">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="logo">
+        <img src="img/logo.png" width="138" height="70" alt="">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-page">
+      <h1 class="visually-hidden">Sedona</h1>
+      <section class="benefits">
+        <b class="benefits-heading">Седона — небольшой городок в Аризоне,
+           заслуживающий большего!</b>
+        <p class="benefits-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <ol class="benefits-list">
+          <li class="benefits-item">
+            <div class="benefits-item-description">
+              <b>Настоящий городок</b>
+              <span>— №1 —</span>
+              <p>Седона - не аттракцион для туристов,
+                 там течет своя жизнь</p>
+            </div>
+              <img src="img/benefits-1.jpg" width="800" height="256" alt="">
+          </li>
+          <li class="benefits-item">
+            <div class="benefits-item-description">
+              <b>Там есть мост дьявола</b>
+              <span>— №2 —</span>
+              <p>Да, по нему можно пройти! Если конечно
+                 Вы осмелитесь</p>
+            </div>
+            <img src="img/benefits-2.jpg" width="800" height="256" alt="">
+          </li>
+          <li class="benefits-item">
+            <b>Небольшая площадь</b>
+            <span>— №3 —</span>
+            <p>Все достопримечательности
+               находятся очень близко</p>
+          </li>
+          <li class="benefits-item">
+            <b>Красивая дорога</b>
+            <span>— №4 —</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем
+               не скучно!</p>
+          </li>
+          <li class="benefits-item">
+            <b>Мало туристов</b>
+            <span>— №5 —</span>
+            <p>Большинство едет в Гранд Каньон и
+               толпится там</p>
+          </li>
+          <li class="benefits-inner-list">
+            <ul>
+              <li class="benefits-inner-item">
+                <b>Жилье</b>
+                <p>Рекомендуем пожить в настоящем
+                   мотеле, все как в кино!</p>
+              </li>
+              <li class="benefits-inner-item">
+                <b>Еда</b>
+                <p>Всегда заказывайте фирменный бургер,
+                   Вы не разочаруетесь!</p>
+              </li>
+              <li class="benefits-inner-item">
+                <b>Сувениры</b>
+                <p>Не только китайского, но и местного
+                   производства!</p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section class="search">
+        <b>Заинтерисовались?</b>
+        <p>Укажите предполагаемые даты поездки,
+           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <form class="search-form" action="#" method="post">
+          <h2>Поиск гостиниц в Седоне</h2>
+          <label for="date-arrive">Дата заезда:</label>
+          <input type="text" name="date-arrive" id="date-arrive" placeholder="24 апреля 2017">
+          <br>
+          <label for="date-departure">Дата выезда:</label>
+          <input type="text" name="date-departure" id="date-departure" placeholder="4 июля 2017">
+          <br>
+          <label for="number-adults">Взрослые:</label>
+          <select name="number-adults" id="number-adults">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+          </select>
+          <label for="number-kids">Дети:</label>
+          <select name="number-kids" id="number-kids">
+            <option value="0" selected>0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <br>
+          <input type="submit" value="Найти">
+        </form>
+        <img class="map" src="#" alt="">
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <span class="hashtag">#VISITSEDONA</span>
+      <ul class="social">
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">YouTube</a></li>
       </ul>
-    </nav>
-  </header>
-
-  <main class="main-page">
-    <h1>Sedona</h1>
-    <section class="benefits">
-      <b>Седона — небольшой городок в Аризоне,
-         заслуживающий большего!</b>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      <ol class="benefits-list">
-        <li class="benefits-item">
-          <b>Настоящий городок</b>
-          <span>№1</span>
-          <p>Седона - не аттракцион для туристов,
-             там течет своя жизнь</p>
-          <img src="img/benefits-1.jpg" width="800" height="256" alt="">
-        </li>
-        <li class="benefits-item">
-          <b>Там есть мост дьявола</b>
-          <span>№2</span>
-          <p>Да, по нему можно пройти! Если конечно
-             Вы осмелитесь</p>
-          <img src="img/benefits-2.jpg" width="800" height="256" alt="">
-        </li>
-        <li class="benefits-item">
-          <b>Небольшая площадь</b>
-          <span>№3</span>
-          <p>Все достопримечательности
-             находятся очень близко</p>
-        </li>
-        <li class="benefits-item">
-          <b>Красивая дорога</b>
-          <span>№4</span>
-          <p>Ехать в Седону из Лас-Вегаса совсем
-             не скучно!</p>
-        </li>
-        <li class="benefits-item">
-          <b>Мало туристов</b>
-          <span>№5</span>
-          <p>Большинство едет в Гранд Каньон и
-             толпится там</p>
-        </li>
-        <li class="benefits-inner-list">
-          <ul>
-            <li class="benefits-inner-item">
-              <b>Жилье</b>
-              <p>Рекомендуем пожить в настоящем
-                 мотеле, все как в кино!</p>
-            </li>
-            <li class="benefits-inner-item">
-              <b>Еда</b>
-              <p>Всегда заказывайте фирменный бургер,
-                 Вы не разочаруетесь!</p>
-            </li>
-            <li class="benefits-inner-item">
-              <b>Сувениры</b>
-              <p>Не только китайского, но и местного
-                 производства!</p>
-            </li>
-          </ul>
-        </li>
-      </ol>
-    </section>
-    <section class="search">
-      <b>Заинтерисовались?</b>
-      <p>Укажите предполагаемые даты поездки,
-         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <form class="search-form" action="#" method="post">
-        <h2>Поиск гостиниц в Седоне</h2>
-        <label for="date-arrive">Дата заезда:</label>
-        <input type="text" name="date-arrive" id="date-arrive" placeholder="24 апреля 2017">
-        <br>
-        <label for="date-departure">Дата выезда:</label>
-        <input type="text" name="date-departure" id="date-departure" placeholder="4 июля 2017">
-        <br>
-        <label for="number-adults">Взрослые:</label>
-        <select name="number-adults" id="number-adults">
-          <option value="1">1</option>
-          <option value="2" selected>2</option>
-        </select>
-        <label for="number-kids">Дети:</label>
-        <select name="number-kids" id="number-kids">
-          <option value="0" selected>0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-        </select>
-        <br>
-        <input type="submit" value="Найти">
-      </form>
-      <img class="map" src="#" alt="">
-    </section>
-  </main>
-
-  <footer class="main-footer">
-    <span class="hashtag">#VISITSEDONA</span>
-    <ul class="social">
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">YouTube</a></li>
-    </ul>
-    <a href="#" class="copyright">Website by HTML Academy</a>
-  </footer>
-
+      <a href="#" class="copyright">Website by HTML Academy</a>
+    </footer>
+  </div>
 </body>
 </html>
