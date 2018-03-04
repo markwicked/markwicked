@@ -27,7 +27,7 @@
     <main class="main-page">
       <h1 class="visually-hidden">Sedona</h1>
       <section class="benefits">
-        <b class="benefits-heading">Седона — небольшой городок в Аризоне,
+        <b class="benefits-title">Седона — небольшой городок в Аризоне,
            заслуживающий большего!</b>
         <p class="benefits-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="benefits-list">
@@ -93,24 +93,24 @@
         </ul>
       </section>
       <section class="search">
-        <b>Заинтерисовались?</b>
-        <p>Укажите предполагаемые даты поездки,
+        <b class="search-title">Заинтерисовались?</b>
+        <p class="search-text">Укажите предполагаемые даты поездки,
            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <form class="search-form" action="#" method="post">
-          <h2>Поиск гостиниц в Седоне</h2>
+          <h2 class="search-form-title">Поиск гостиниц в Седоне</h2>
           <label for="date-arrive">Дата заезда:</label>
-          <input type="text" name="date-arrive" id="date-arrive" placeholder="24 апреля 2017">
+          <input type="text" id="date-arrive" name="date-arrive" placeholder="24 апреля 2017">
           <br>
           <label for="date-departure">Дата выезда:</label>
-          <input type="text" name="date-departure" id="date-departure" placeholder="4 июля 2017">
+          <input type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017">
           <br>
           <label for="number-adults">Взрослые:</label>
-          <select name="number-adults" id="number-adults">
+          <select id="number-adults" name="number-adults" >
             <option value="1">1</option>
             <option value="2" selected>2</option>
           </select>
           <label for="number-kids">Дети:</label>
-          <select name="number-kids" id="number-kids">
+          <select id="number-kids" name="number-kids" >
             <option value="0" selected>0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -118,7 +118,7 @@
           <br>
           <input type="submit" value="Найти">
         </form>
-        <img class="map" src="#" alt="">
+        <img class="map" src="img/map.jpg" alt="">
       </section>
     </main>
 

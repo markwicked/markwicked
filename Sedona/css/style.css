@@ -89,7 +89,7 @@ a {
   opacity: 0.3;
 }
 
-.main-page .benefits-heading {
+.main-page .benefits-title {
   display: block;
   width: 440px;
   margin: 0 auto;
@@ -189,6 +189,10 @@ a {
 
 .benefits-inner-list ul li p {
   margin-top: 21px;
+}
+
+.benefits-row-list {
+  background-color: #eeeeee;
 }
 
 .benefits-row-list ul {
