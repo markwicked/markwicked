@@ -137,7 +137,7 @@ a {
 
 .benefits-list .benefits-item-description {
   width: 400px;
-  min-height: 209px;
+  height: 209px;
   padding-top: 47px;
   text-align: center;
   color: #ffffff;
@@ -170,7 +170,7 @@ a {
 
 .benefits-inner-list ul li {
   width: 400px;
-  min-height: 169px;
+  height: 169px;
   padding-top: 161px;
   text-align: center;
 }
@@ -189,4 +189,49 @@ a {
 
 .benefits-inner-list ul li p {
   margin-top: 21px;
+}
+
+.benefits-row-list ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits-row-list li {
+  width: 400px;
+  height: 209px;
+  padding-top: 47px;
+  text-align: center;
+}
+
+.benefits-row-list li:nth-child(1) b {
+  width: 118px;
+}
+
+.benefits-row-list b {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.benefits-row-list span {
+  display: block;
+  margin-bottom: 21px;
+}
+
+.benefits-row-list li:nth-child(1) p {
+  width: 210px;
+  margin: 0 auto;
+}
+
+.benefits-row-list li:nth-child(2) p {
+  width: 262px;
+  margin: 0 auto;
+}
+
+.benefits-row-list li:nth-child(3) p {
+  width: 260px;
+  margin: 0 auto;
 }
