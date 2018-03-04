@@ -320,7 +320,7 @@ a {
   margin-bottom: 30px;
 }
 
-.search-form input {
+.search-form input[type="text"] {
   width: 346px;
   padding: 9px 32px 9px 13px;
   font: inherit;
@@ -336,12 +336,12 @@ a {
     box-shadow: none;
 }
 
-.search-form input:hover {
+.search-form input[type="text"]:hover {
   background-color: #ebebeb;
   background-image: url("../img/sprites/calendar-hover.png");
 }
 
-.search-form input:focus {
+.search-form input[type="text"]:focus {
   background-color: #ffffff;
   background-image: url("../img/sprites/calendar-click.png");
   outline: 2px solid #eeeeee;
