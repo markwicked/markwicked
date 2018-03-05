@@ -377,3 +377,18 @@ a {
   font: inherit;
   font-weight: 700;
 }
+
+.search-form-numbers {
+  display: flex;
+  justify-content: space-between;
+  outline: 1px dotted red;
+}
+
+.search-form-numbers .numbers-item {
+  position: relative;
+  outline: 1px dotted #000;
+}
+
+.numbers-item input[type="number"] {
+  width: 114px;
+}
