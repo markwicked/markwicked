@@ -44,6 +44,8 @@ a {
 }
 
 .main-navigation {
+  padding-left: 72px;
+  padding-right: 72px;
   background-color: #ffffff;
 }
 
@@ -62,17 +64,13 @@ a {
   list-style: none;
 }
 
-.site-navigation li:nth-child(1) {
-  margin-left: 72px;
-  margin-right: 147px;
-}
-
 .site-navigation li:nth-child(2) {
+  margin-left: 147px;
   margin-right: 388px;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-right: 165px;
+.site-navigation li:nth-child(4) {
+  margin-left: auto;
 }
 
 .site-navigation a {
