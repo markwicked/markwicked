@@ -15,6 +15,11 @@ a {
   color: #000000;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute !important;
   height: 1px; width: 1px;
