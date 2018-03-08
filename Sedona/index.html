@@ -102,23 +102,27 @@
         </button>
         </div>
         <form class="search-form" action="#" method="post">
-          <p>
+          <p class="dates-form">
             <label for="date-arrive">Дата заезда:</label>
-            <input type="text" id="date-arrive" name="date-arrive" placeholder="24 апреля 2018" required>
+            <input type="text" id="date-arrive" name="date-arrive" placeholder="24 апреля 2018">
           </p>
-          <p>
+          <p class="dates-form">
             <label for="date-departure">Дата выезда:</label>
-            <input type="text" id="date-departure" name="date-departure" placeholder="4 июля 2018" required>
+            <input type="text" id="date-departure" name="date-departure" placeholder="4 июля 2018">
           </p>
-          <div class="search-form-numbers">
-            <div class="numbers-item">
-              <label for="numbers-adults">Взрослые:</label>
-              <input type="number" id="number-adults" min="1" max="5" step="1" value="1">
-            </div>
-            <div class="numbers-item">
-              <label for="numbers-kids">Дети:</label>
-              <input type="number" id="number-kids" min="0" max="5" step="1" value="0">
-            </div>
+          <div class="quantity-items">
+              <p class="quantity-item">
+                <label for="quantity-adults">Взрослые:</label>
+                <button type="button" class="quantity-minus-button" ></button>
+                <input type="number" min="1" max="5" step="1" value="2">
+                <button type="button" class="quantity-plus-button"></button>
+              </p>
+              <p class="quantity-item">
+                <label for="quantity-kids">Дети:</label>
+                <button type="button" class="quantity-minus-button"></button>
+                <input type="number" min="0" max="5" step="1" value="0">
+                <button type="button" class="quantity-plus-button"></button>
+              </p>
           </div>
           <input type="submit" value="Найти">
         </form>

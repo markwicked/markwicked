@@ -305,7 +305,7 @@ img {
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.search-form p {
+.search-form .dates-form {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -315,15 +315,15 @@ img {
   padding: 0;
 }
 
-.search-form p:nth-child(1) {
+.search-form .dates-form:nth-child(1) {
   margin-bottom: 29px;
 }
 
-.search-form p:nth-child(2) {
+.search-form .dates-form:nth-child(2) {
   margin-bottom: 30px;
 }
 
-.search-form input[type="text"] {
+.search-form .dates-form input[type="text"] {
   width: 346px;
   padding: 9px 32px 9px 13px;
   font: inherit;
@@ -335,16 +335,16 @@ img {
   box-sizing: border-box;
 }
 
-.search-form input:invalid {
+.search-form .dates-form input:invalid {
     box-shadow: none;
 }
 
-.search-form input[type="text"]:hover {
+.search-form .dates-form input[type="text"]:hover {
   background-color: #ebebeb;
   background-image: url("../img/sprites/calendar-hover.png");
 }
 
-.search-form input[type="text"]:focus {
+.search-form .dates-form input[type="text"]:focus {
   background-color: #ffffff;
   background-image: url("../img/sprites/calendar-click.png");
   outline: 2px solid #eeeeee;
@@ -383,17 +383,79 @@ img {
   font-weight: 700;
 }
 
-.search-form-numbers {
+.quantity-items {
   display: flex;
   justify-content: space-between;
-  outline: 1px dotted red;
+  margin-bottom: 54px;
 }
 
-.search-form-numbers .numbers-item {
-  position: relative;
-  outline: 1px dotted #000;
+.quantity-item {
+  display: flex;
+  height: 38px;
+  margin: 0;
 }
 
-.numbers-item input[type="number"] {
-  width: 114px;
+.quantity-item label {
+  align-self: center;
+}
+
+.quantity-item:first-child label {
+  margin-right: 41px;
+}
+
+.quantity-item:last-child label {
+  margin-right: 27px;
+}
+
+.quantity-item input[type="number"] {
+  width: 38px;
+  font: inherit;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.quantity-item input[type=number]::-webkit-inner-spin-button,
+.quantity-item input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-item input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.quantity-item button {
+  width: 38px;
+  background-color: #f2f2f2;
+  border: 0;
+  cursor: pointer;
+}
+
+.quantity-item button:nth-child(2) {
+  background-image: url("../img/sprites/-off.png");
+  background-repeat: no-repeat;
+  background-position: 13px 18px;
+}
+
+.quantity-item button:nth-child(2):hover {
+  background-image: url("../img/sprites/-hover.png");
+}
+
+.quantity-item button:nth-child(2):active {
+  background-image: url("../img/sprites/-click.png");
+}
+
+.quantity-item button:nth-child(4) {
+  background-image: url("../img/sprites/+off.png");
+  background-repeat: no-repeat;
+  background-position: 15px 14px;
+}
+
+.quantity-item button:nth-child(4):hover {
+  background-image: url("../img/sprites/+hover.png");
+}
+
+.quantity-item button:nth-child(4):active {
+  background-image: url("../img/sprites/+click.png");
 }
