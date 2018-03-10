@@ -140,5 +140,16 @@
       <a href="#" class="copyright">Website by HTML Academy</a>
     </footer>
   </div>
+
+  <script type="text/javascript">
+    var link = document.querySelector(".modal-search-button");
+    var popup = document.querySelector(".search-form");
+
+
+    link.addEventListener("click", function(evt) {
+      popup.classList.toggle("search-form-show");
+    });
+  </script>
+
 </body>
 </html>

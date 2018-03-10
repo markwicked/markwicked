@@ -294,6 +294,7 @@ img {
 }
 
 .search-form {
+  display: none;
   position: absolute;
   top: 291px;
   left: 50%;
@@ -304,6 +305,10 @@ img {
   font-weight: 700;
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.search-form-show {
+  display: block;
 }
 
 .search-form .dates-form {
