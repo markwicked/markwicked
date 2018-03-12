@@ -500,6 +500,7 @@ img {
   padding-right: 101px;
   background-color: #ffffff;
   opacity: 0.9;
+  outline: 1px dotted red;
 }
 
 .main-footer .hashtag {
