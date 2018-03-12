@@ -294,7 +294,7 @@ img {
 }
 
 .search-form {
-  display: none;
+  display: block;
   position: absolute;
   top: 291px;
   left: 50%;
@@ -308,10 +308,10 @@ img {
 }
 
 .search-form-show {
-  display: block;
+  display: none;
 }
 
-.search-form .dates-form {
+.dates-form {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -321,38 +321,52 @@ img {
   padding: 0;
 }
 
-.search-form .dates-form:nth-child(1) {
+.dates-form:nth-child(1) {
   margin-bottom: 29px;
 }
 
-.search-form .dates-form:nth-child(2) {
+.dates-form:nth-child(2) {
   margin-bottom: 30px;
 }
 
-.search-form .dates-form input[type="text"] {
+.dates-form .date-calendar-icon {
+  position: absolute;
+  top: 8px;
+  left: 429px;
+  width: 21px;
+  height: 22px;
+  background-image: url("../img/sprites/calendar-off.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.dates-form .date-calendar-icon:hover {
+  background-image: url("../img/sprites/calendar-hover.png");
+}
+
+.dates-form .date-calendar-icon:active {
+  background-image: url("../img/sprites/calendar-click.png");
+}
+
+.dates-form input[type="text"] {
   width: 346px;
   padding: 9px 32px 9px 13px;
   font: inherit;
   background-color: #f2f2f2;
-  background-image: url("../img/sprites/calendar-off.png");
-  background-repeat: no-repeat;
-  background-position: right 9px top 8px;
   border: none;
   box-sizing: border-box;
 }
 
-.search-form .dates-form input:invalid {
+.dates-form input:invalid {
     box-shadow: none;
 }
 
-.search-form .dates-form input[type="text"]:hover {
+.dates-form input[type="text"]:hover {
   background-color: #ebebeb;
-  background-image: url("../img/sprites/calendar-hover.png");
 }
 
-.search-form .dates-form input[type="text"]:focus {
+.dates-form input[type="text"]:focus {
   background-color: #ffffff;
-  background-image: url("../img/sprites/calendar-click.png");
   outline: 2px solid #eeeeee;
 }
 
@@ -423,8 +437,8 @@ img {
 
 .quantity-item input[type=number]::-webkit-inner-spin-button,
 .quantity-item input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
   margin: 0;
+  -webkit-appearance: none;
 }
 
 .quantity-item input[type=number] {
