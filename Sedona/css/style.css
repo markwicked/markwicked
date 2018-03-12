@@ -1,7 +1,7 @@
 body {
   position: relative;
   min-width: 1280px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -491,7 +491,6 @@ img {
 .main-footer {
   display: flex;
   position: absolute;
-  align-items: center;
   bottom: 0;
   width: 968px;
   height: 126px;
@@ -502,9 +501,10 @@ img {
 }
 
 .main-footer .hashtag {
+  margin-top: 49px;
+  margin-right: 257px;
   font-size: 21px;
   font-weight: 700;
-  margin-right: 256px;
 }
 
 .main-footer .social {
@@ -512,6 +512,7 @@ img {
   justify-content: space-between;
   width: 150px;
   margin: 0;
+  margin-top: 36px;
   padding: 0;
   list-style: none;
 }
@@ -542,6 +543,8 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 198px;
+  height: 42px;
+  margin-top: 38px;
   margin-left: auto;
 }
 
