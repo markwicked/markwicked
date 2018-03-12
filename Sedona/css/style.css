@@ -491,19 +491,66 @@ img {
 .main-footer {
   display: flex;
   position: absolute;
-  justify-content: space-between;
   align-items: center;
   bottom: 0;
-  width: 967px;
-  height: 125px;
+  width: 968px;
+  height: 126px;
   padding-left: 132px;
-  padding-right: 101px;
+  padding-right: 100px;
   background-color: #ffffff;
   opacity: 0.9;
-  outline: 1px dotted red;
 }
 
 .main-footer .hashtag {
   font-size: 21px;
   font-weight: 700;
+  margin-right: 256px;
+}
+
+.main-footer .social {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social a:hover {
+  background-color: #669ec0;
+}
+
+.social a:active {
+  background-color: #5496bd;
+}
+
+.social a:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 198px;
+  margin-left: auto;
+}
+
+.copyright:hover path,
+.copyright:hover rect {
+  fill: #98c1da;
+}
+
+.copyright:active path,
+.copyright:hover rect {
+  fill: #c9c8c8;
 }
