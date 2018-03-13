@@ -64,19 +64,32 @@
             </div>
             <input class="button" type="submit" value="Показать">
           </fieldset>
-
         </form>
       </section>
       <section class="search-results">
         <header class="results-header">
-          <b>Найдено: 3</b>
-          <b>Сортировка:</b>
+          <b class="results-header-title">Найдено: 3</b>
+          <b class="results-header-subtitle">Сортировка:</b>
           <ul class="sort-by">
-            <li><button>По цене</button></li>
-            <li><button>По типу</button></li>
-            <li><button>По рейтингу</button></li>
-            <li><button>Стрелка вверх</button></li>
-            <li><button>Стрелка вниз</button></li>
+            <li><a class="button button-current" href="#">По цене</a></li>
+            <li><a class="button button-inactive" href="#">По типу</a></li>
+            <li><a class="button button-inactive" href="#">По рейтингу</a></li>
+          </ul>
+          <ul class="control-arrows">
+            <li>
+              <a class="button" href="#">
+                <svg width="11" height="10">
+                  <polygon points="1,10 6,1 11,10" fill="#cacaca"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="button" href="#">
+                <svg width="11" height="10">
+                  <polygon points="1,1 6,10 11,1" fill="#81b3d2"/>
+                </svg>
+              </a>
+            </li>
           </ul>
         </header>
         <section class="results-hotels">

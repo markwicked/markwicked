@@ -761,3 +761,47 @@ img {
   border-radius: 2px;
   cursor: pointer;
 }
+
+.search-results {
+  padding: 30px 72px 0 72px;
+}
+
+.results-header-title {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.results-header-subtitle {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-by {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort-by .button {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-by .button-current {
+  color: #81b3d2;
+}
+
+.sort-by .button-inactive {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline dotted #81b3d2;
+}
+
+.control-arrows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.control-arrows svg {
+  outline: 1px dotted red;
+}
